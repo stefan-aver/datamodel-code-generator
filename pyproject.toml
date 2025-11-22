@@ -48,7 +48,7 @@ optional-dependencies.all = [
   "datamodel-code-generator[validation]",
 ]
 optional-dependencies.debug = [
-  "pysnooper>=0.4.1,<2",
+  "pysnooper>=0.5.0,<2",
 ]
 optional-dependencies.graphql = [
   "graphql-core>=3.2.3",
