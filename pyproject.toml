@@ -61,7 +61,7 @@ optional-dependencies.ruff = [
 ]
 optional-dependencies.validation = [
   "openapi-spec-validator>=0.2.8,<0.7",
-  "prance>=0.18.2",
+  "prance>=0.22.11.4.0",
 ]
 urls.Homepage = "https://github.com/koxudaxi/datamodel-code-generator"
 urls.Source = "https://github.com/koxudaxi/datamodel-code-generator"
