@@ -93,7 +93,7 @@ type = [
   "pyright>=1.1.393",
   "types-jinja2",
   "types-pyyaml",
-  "types-setuptools>=67.6.0.5,<70",
+  "types-setuptools>=67.8.0.0,<70",
   "types-toml",
   { include-group = "test" },
 ]
