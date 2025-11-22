@@ -99,7 +99,7 @@ type = [
 ]
 docs = [
   "mkdocs>=1.6",
-  "mkdocs-material>=9.5.31",
+  "mkdocs-material>=9.7.0",
 ]
 black22 = [ "black==22.1" ]
 black23 = [ "black==23.12" ]
