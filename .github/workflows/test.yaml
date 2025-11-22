@@ -54,7 +54,7 @@ jobs:
         os.rename(f".tox/.coverage.${{ matrix.py || matrix.tox_env }}", f".tox/.coverage.${{ matrix.py || matrix.tox_env}}-${{ matrix.os }}")
       shell: python
     - name: Upload coverage data
-      uses: actions/upload-artifact@v4
+      uses: actions/upload-artifact@v5
       with:
         include-hidden-files: true
         name: .coverage.${{ matrix.py || matrix.tox_env }}-${{ matrix.os == '' && 'ubuntu-24.04' || matrix.os }}
@@ -88,7 +88,7 @@ jobs:
         env:
           UV_PYTHON_PREFERENCE: only-managed
       - name: Upload HTML report
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v5
         with:
           name: html-report
           path: .tox/htmlcov
