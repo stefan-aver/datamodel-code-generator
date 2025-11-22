@@ -29,7 +29,7 @@ dynamic = [
   "version",
 ]
 dependencies = [
-  "argcomplete>=2.10.1,<4",
+  "argcomplete>=3.6.3,<4",
   "black>=19.10b0",
   "genson>=1.2.1,<2",
   "inflect>=4.1,<8",
