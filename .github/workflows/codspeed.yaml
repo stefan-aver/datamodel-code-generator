@@ -17,18 +17,18 @@ jobs:
   benchmarks:
     runs-on: ubuntu-24.04
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4
       # uv standalone build is not compatible with CodSpeedHQ
       # https://github.com/astral-sh/uv/issues/11006
-      - uses: actions/setup-python@v4
+      - uses: actions/setup-python@7f4fc3e22c37d6ff65e88745f38bd3157c663f7c # v4
         with:
           python-version: "3.13"
       - name: Install the latest version of uv
-        uses: astral-sh/setup-uv@v5
+        uses: astral-sh/setup-uv@d4b2f3b6ecc6e67c4457f6d3e41ec42d3d0fcb86 # v5
       - name: Install dependencies
         run: uv sync --all-extras
       - name: Run benchmarks
-        uses: CodSpeedHQ/action@v3
+        uses: CodSpeedHQ/action@76578c2a7ddd928664caa737f0e962e3085d4e7c # v3
         with:
           token: ${{ secrets.CODSPEED_TOKEN }}
           run: .venv/bin/pytest tests/ --codspeed -n auto
